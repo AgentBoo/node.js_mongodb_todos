@@ -41,4 +41,8 @@ const app = express();
       app.set('port', (process.env.PORT || 5000));
       app.listen(app.get('port'), () => console.log('Iscreamyouscreamgimmethatgimmethat ice cream, on port ', app.get('port')));
 
-5/
+5/ create dirs and files
+./views
+./public
+Procfile    : https://stackoverflow.com/questions/46607237/heroku-error-9-when-using-heroku-local-web-with-the-node-js-starter-project
+.gitignore  : https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction

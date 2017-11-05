@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/AgentBoo/node.js_mongodb_todos-/issues"
   },
-  "homepage": "https://github.com/AgentBoo/node.js_mongodb_todos-#readme"
+  "homepage": "https://github.com/AgentBoo/node.js_mongodb_todos-#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "morgan": "^1.9.0",
+    "mustache-express": "^1.2.5",
+    "nodemon": "^1.12.1"
+  }
 }

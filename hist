@@ -1,0 +1,44 @@
+1/ cli
+git init
+npm init -y
+git add .
+git commit -m "initial commit"
+git remote add origin https://github.com/AgentBoo/node.js_mongodb_todos-.git
+git push -u origin master
+
+2/
+touch server.js
+npm i -S express body-parser morgan nodemon mustache-express
+
+3/ package.js
+{ "scripts": {
+     "test": "echo \"Error: no test specified\" && exit 1",
+     "start": "nodemon server.js"
+  }
+}
+
+4/ server.js
+// NOTE: Modules =================================================================
+const express = require('express'),
+      bodyParser = require('body-parser'),
+      morgan = require('morgan'),
+      mustacheExpress = require('mustache-express');
+
+// NOTE: Mongo config ============================================================
+
+// NOTE: Express app =============================================================
+const app = express();
+      app.engine('mustache', mustacheExpress());
+      app.set('view engine', 'mustache');
+      app.set('views', __dirname + '/views');
+      app.use('/public', express.static(__dirname + '/public'));
+      app.use(bodyParser.json());
+      app.use(bodyParser.urlencoded({ extended: true }));
+      app.use(morgan('dev'));
+
+
+// NOTE: Port ====================================================================
+      app.set('port', (process.env.PORT || 5000));
+      app.listen(app.get('port'), () => console.log('Iscreamyouscreamgimmethatgimmethat ice cream, on port ', app.get('port')));
+
+5/

@@ -46,3 +46,9 @@ const app = express();
 ./public
 Procfile    : https://stackoverflow.com/questions/46607237/heroku-error-9-when-using-heroku-local-web-with-the-node-js-starter-project
 .gitignore  : https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction
+
+6/ cli
+heroku create
+=>
+https://stark-gorge-92897.herokuapp.com/
+https://git.heroku.com/stark-gorge-92897.git

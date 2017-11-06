@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 
 /*** NOTE: Module dependencies ******************************************************/
-
-const app = require('../server.js'),
+const app = require('../app.js'),
       debug = require('debug')('todos_heroku:server');
       http = require('http');
 

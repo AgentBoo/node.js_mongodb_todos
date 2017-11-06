@@ -1,9 +1,13 @@
-var express = require('express');
-var router = express.Router();
+// NOTE: Module dependencies ====================================================
+const express = require('express');
 
-/* GET home page. */
+// NOTE: Express router =========================================================
+const router = express.Router();
+
+// GET root
 router.get('/', (req, res) =>
    res.send('Landed on todos index')
 );
 
+// NOTE: Export router
 module.exports = router;

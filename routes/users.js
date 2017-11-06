@@ -1,9 +1,13 @@
-var express = require('express');
-var router = express.Router();
+// NOTE: Module dependencies ====================================================
+const express = require('express');
 
-/* GET users listing. */
+// NOTE: Express router =========================================================
+const router = express.Router();
+
+// GET /users
 router.get('/', (req, res) =>
-   res.send('landed on users resource')
+   res.send('Landed on users')
 );
 
+// NOTE: Export router
 module.exports = router;

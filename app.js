@@ -21,7 +21,7 @@ const app = express();
       app.use(bodyParser.urlencoded({ extended: true }));
       app.use(cookieParser())
       app.use(morgan('dev'));
-      // Routers
+      // routers
       app.use('/', todos);
       app.use('/users', users);
       // catch 404 and forward to error handler
@@ -40,11 +40,6 @@ const app = express();
           res.status(err.status || 500);
           res.render('error');
       });
-
-
-// NOTE: Index page
-      app.get('/', (req, res) => res.send('You landed on the index page'));
-
 
 // NOTE: Export to bin/www ========================================================
 module.exports = app;

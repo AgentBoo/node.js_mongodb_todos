@@ -10,3 +10,12 @@ npm-debug.log
 # Docker
 Dockerfile
 docker-compose.yml
+
+# Ignore hist
+hist
+
+# Configs
+config/*
+
+# I don't ever see package-lock anywhere 
+package-lock.json

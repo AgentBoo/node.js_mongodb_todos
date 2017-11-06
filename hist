@@ -52,3 +52,31 @@ heroku create
 =>
 https://stark-gorge-92897.herokuapp.com/
 https://git.heroku.com/stark-gorge-92897.git
+
+7/ mustache docs
+https://mustache.github.io/mustache.5.html
+
+
+8/ tree structure
+# Based on  : https://expressjs.com/en/starter/generator.html
+> bin
+  > www
+> config
+> public
+> routes
+> views
+> package.json
+> procfile
+> server.js
+
+9/ Procfile
+# Switched to recommendation from top answer by Andy and theonlygusti : https://stackoverflow.com/questions/23169941/what-does-bin-www-do-in-express-4-x
+# Procfile used to be based on Heroku tutorial : https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction
+web: node --inspect=5858 server.js
+
+10/ package.json
+{ "scripts": {
+     "test": "echo \"Error: no test specified\" && exit 1",
+     "start": "nodemon ./bin/www"
+     }
+}
